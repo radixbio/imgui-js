@@ -7,7 +7,7 @@ const tsconfigOverride = {
   compilerOptions: {
     target: "ES2015",
     module: "ES2015",
-    declaration: false,
+    declaration: true,
   }
 };
 
@@ -15,7 +15,7 @@ export default [
   {
     input: "src/imgui.ts",
     output: {
-      file: "dist/imgui.umd.js",
+      file: "dist/imgui.js",
       name: "ImGui",
       format: "umd",
       exports: "named",
@@ -37,7 +37,7 @@ export default [
   {
     input: "example/src/imgui_impl.ts",
     output: {
-      file: "dist/imgui_impl.umd.js",
+      file: "dist/imgui_impl.js",
       name: "ImGui_Impl",
       format: "umd",
       exports: "named",
@@ -55,7 +55,7 @@ export default [
   {
     input: "example/src/imgui_demo.ts",
     output: {
-      file: "dist/imgui_demo.umd.js",
+      file: "dist/imgui_demo.js",
       name: "ImGui_Demo",
       format: "umd",
       exports: "named",
@@ -73,7 +73,7 @@ export default [
   {
     input: "example/src/imgui_memory_editor.ts",
     output: {
-      file: "dist/imgui_memory_editor.umd.js",
+      file: "dist/imgui_memory_editor.js",
       name: "ImGui_Memory_Editor",
       format: "umd",
       exports: "named",
